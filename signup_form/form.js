@@ -1,15 +1,14 @@
-const form = document.getElementById('myListing');
 const passwordInput = document.getElementById('password_input');
 const confirmPasswordInput = document.getElementById('password_confirmation');
+const submitButton = document.getElementById('submitButton');
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the form from submitting by default
-
+submitButton.addEventListener('click', () => {
     if (passwordInput.value !== confirmPasswordInput.value) {
         alert('Passwords do not match!');
-        return; // Stop the function if passwords don't match
+        return; // Stop if passwords don't match
     }
 
-    // If passwords match, submit the form
-    form.submit();
+    // If passwords match, submit the form (or perform other actions)
+    // Here, replace "console.log('Form submitted');" with your desired action
+    console.log('Form submitted');
 });
