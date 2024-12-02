@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+#logo {
+    display: flex;
+    margin-right: 10px;
+}
+#logo:hover {
+    cursor: pointer;
+}
+.logo_text {
+    justify-content: center;
+    align-self: center;
+    margin-left: 6px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 900;
+}
+.flex_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+body {
+    background-color: #E1DCC5;
+}
+main {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+section {
+    margin-bottom: 30px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.library_container {
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.navbar1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.navbar1 li a {
+    width: 100px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+li a {
+    text-decoration: none;
+    color: #085D8E;
+}
+
+.logins {
+    background-color: #085D8E;
+    color: #FFFFFF;
+}
+.logins:hover {
+    background-color: #2b8fc9;
+}
+
+.navbar li {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    width: 140px;
+    max-width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0;
+}
+.navigation {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+.search_img input {
+    border: none;
+}
+.search-container {
+    position: relative;
+    max-width: 100%;
+    width: 250px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px 20px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-icon {
+    background-color: #085D8E;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.search-icon:hover {
+    background-color: #2b8fc9;
+}
+
+.logo_img {
+    width: 100px;
+    height: 100px;
+}
+.selection {
+    display: flex;
+}
+.card {
+    background-color: #FCFBF7;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.description {
+    margin-left: 10px;
+}
+.heading, .fav_addition {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+.inner_description{
+    opacity: 0.5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+.book {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.book_selection {
+    background-color: #F3EDD7;
+    display: flex;
+    padding: 20px;
+}
+.heading1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #085D8E;
+    font-size: 20px;
+}
+button {
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #085D8E;
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #034469;
+    border-radius: none;
+}
+.addButton {
+    margin-top: 4px;
+}
+.removeButton {
+    margin-top: 4px;
+}
+.third_button {
+    margin-top: 4px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, label {
+    display: block;
+}
+fieldset  {
+    border: none;
+}
+.fieldset {
+    display: flex;
+    gap: 80px;
+}
+section {
+    margin-left: 10px;
+    display: flex;
+    gap: 50px;
+}
+.collection {
+    padding-top: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #085D8E;
+    font-size: 20px;
+}
+label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+fieldset input {
+    outline: none;
+    padding: 5px;
+}
+#fav_addition {
+    margin-top: 20px;
+}
+#submit_button {
+    margin-left: 3px;
+    margin-top: 20px;
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #085D8E;
+    border: none;
+    border-radius: 4px;
+}
+.submission {
+    display: flex;
+}
+.readcheck {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+.book-addition {
+    padding-bottom: 2rem;
+}

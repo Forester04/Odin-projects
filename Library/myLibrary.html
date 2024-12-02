@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ebb7e681ac.js" crossorigin="anonymous"></script>
+    <title>Odin Library</title>
+</head>
+<body>
+    <div class="library_container">
+        <header class="flex_header">
+            <div id="logo">
+                <img src="https://images.unsplash.com/photo-1481622254766-0f0a35bf6e77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b3BlbnxlbnwwfHwwfHx8MA%3D%3D" alt="Library logo" class="logo">
+                <p class="logo_text">LIBRARY</p>
+            </div>
+            <div>
+                <nav class="navigation">
+                    <ul class="navbar">
+                        <li><a href="index.html">Books</a></li>
+                        <li><a href="#">My Library</a></li>
+                        <li><a href="myFavorite.html">Favorite Books</a></li>
+                    </ul>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" id="search-input">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+
+                    <ul class="navbar1">
+                        <li><a href="" class="logins">Log In</a></li>
+                        <li><a href="" class="logins">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div>
+                <p class="heading1">Welcome to Open Library</p>
+                <div class="selection">
+                    <div>
+                        <div class="card">
+                            <img src="https://openlibrary.org/static/images/onboarding/read.png" alt="Read library" class="logo_img">
+                            <div class="description">
+                                <p class="heading">Read Free Library Books Online</p>
+                                <p class="inner_description">Million books available through controlled digital learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <img src="https://openlibrary.org/static/images/onboarding/reading_goal.svg" alt="Library planner" class="logo_img">
+                            <div class="description">
+                                <p class="heading">Set Yor Yearly Reading Goals</p>
+                                <p class="inner_description">Learn how to set a yearly reading goal and track what you read.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <img src="https://openlibrary.org/static/images/onboarding/track.png" alt="Tracker" class="logo_img">
+                            <div class="description">
+                                <p class="heading">Keep Track of Your Favorite Books</p>
+                                <p class="inner_description">Organize your books using list and reading logs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="heading1">Trending Books</p>
+                <div class="myLibrary-section">
+                    
+                </div>
+            </div>
+            <p class="collection">Add Your New Book Collection Here</p>
+            <section>
+                <form action="#" id="book-form">
+                    <div class="fieldset">
+                        <fieldset class="first_form">
+                            <label for="firstname">Author's Firstname</label>
+                            <input type="text" name="authorsfirstname" id="authorsfirstname">
+                            <label for="lastname">Autor's Lastname</label>
+                            <input type="text" name="authorslastname" id="authorslastname">
+                        </fieldset>
+                        <fieldset class="second_section">
+                            <label for="title">Title of the Book</label>
+                            <input type="text" name="title" id="title">
+                            <label for="numberofpages"> Number of Pages</label>
+                            <input type="number" name="numberofpages" id="pages">
+                        </fieldset>
+                    </div>
+                    <div class="submission">
+                        <button id="submit_button">Add New Book</button>
+                        <div class="readcheck">
+                            <label for="read">Read</label>
+                            <input type="checkbox" id="read">
+                        </div>
+                    </div>
+                </form>
+                <div class="fav_addition">
+                    <p>If you wish add your collection straight away to your favorite list click the button below</p>
+                    <button id="fav_addition">Add to Favorite</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
