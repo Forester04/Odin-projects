@@ -45,13 +45,29 @@ const libraryBooks = [
 const myLibrary = [];
 const myFavorite = [];
 
-function Book(title, authorFirstName, authorLastName, pages, read) {
-    this.title = title;
+function Book(authorFirstName, authorLastName, title, pages, read) {
     this.authorFirstName = authorFirstName;
     this.authorLastName = authorLastName;
+    this.title = title;
     this.pages = pages;
     this.read = read;
 }
+
+function addNewBook() {
+    const authorFirstName = document.getElementById('authorFirstName').value;
+    const authorLastName = document.getElementById('authorLastName').value;
+    const title = document.getElementById('title').value;
+    const pages = document.getElementById('pages').value;
+    const read = document.getElementById('read').checked; 
+    const newBook = new Book(authorFirstName, authorLastName, title, pages, read);
+
+    return myLibrary.push(newBook);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('submit_button').addEventListener('click', addNewBook);
+});
+document.getElementById('debugging').textContent = myLibrary;
 // function displayMyLibrary() {
 //   const libraryDiv = document.querySelector('.myLibrary-section');
 
@@ -70,23 +86,6 @@ function Book(title, authorFirstName, authorLastName, pages, read) {
 //     libraryDiv.appendChild(bookCard);
 //   });
 // }
-document.getElementById('submit_button').addEventListener('click', () => {
-  const title = document.getElementById('title');
-  const pages = document.getElementById('pages');
-  const authorFirstName = document.getElementById('authorFirstName');
-  const authorLastName = document.getElementById('authorLastName');
-  
-  const newBook = [];
-  newBook.push(
-    {
-      title: title,
-      authorFirstName: authorFirstName,
-      authorLastName: authorLastName,
-      pages: pages
-    }
-  )
-  myLibrary.push(newBook);
-})
 
 
 
